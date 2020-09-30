@@ -1,0 +1,36 @@
+SpringMVC03
+1. pom.xml : ojdbc6.jar mybatis, mybatis-spring, dbcp ,spring-orm
+2. web.xml 
+3. test.sql(/WEB-INF/spring/sqls/test.sql)   //sqls폴더는 편하려고 만든거다 
+4.BoardDto, BoardDao(BoardDaoImpl),BoardBiz(BoardBizimpl),BoardController(따로 만듦)
+5. board-mapper.xml (src/main/resources/mybatis/board-mapper.xml) 
+6.db.properties(src/main/resources/mybatis/db.properties) 
+7.config.xml(/WEB-INF/spring/sqls/config.xml)
+8. applicationContext.xml 
+
+Fileter	(로그찍는필터)
+9. LogFilter(com.mvc.upgrade.common.filter.LogFilter) impl javax.servlet.Fileter)
+10.web.xml
+
+_AOP(값을 출력해보자)
+11.pom. xml: aspectjrt ,aspectjweaver
+12.LogAop(com.mvc.upgrade.common.aop.LogAop)
+13.aop-context.xml (WEB-INF/spring/appServlet/aop-context.xml)
+14.web.xml
+15. log4j.xml (src/main/resources/log4j.xml)
+
+_login(jackson이 어떻게 json과map을변경해주는지)
+16. pom.xml : jackson-core-asl , jackson-mapper-asl (jackson-core / spring 4.x부터는 jackson-databind사용해야 한다 ★)
+17. mymember.sql (WEB-INF/spring/sqls/mymember.sql)
+18. MemberDto, MemberDao,MemberBiz,MemberController
+19. member-mapper.xml (src/main/resources/mybatis/member-mapper.xml)
+20. config.xml(WEB-INF/spring/sqls/config.xml)
+
+_Interceptor
+21.LoginInterceptor(com.mvc.upgrade.common.interceptor.LogInterceptor impl HandlerInterceptor)
+22.servlet-context.xml
+
+_Transaction
+23. (board)dao,biz,contoller
+24. servlet-context  (naspace에 tx체크)
+25.applicationContext.xml : transactionManager
