@@ -8519,7 +8519,7 @@
 	display: inline-block
 }
 
-@
+/* @
 -webkit-keyframes icofont-spin { 0%{
 	-webkit-transform: rotate(0);
 	transform: rotate(0)
@@ -8560,7 +8560,7 @@ rotate(
 360deg
 )
 }
-}
+} */
 .icofont-rotate-90 {
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg)
