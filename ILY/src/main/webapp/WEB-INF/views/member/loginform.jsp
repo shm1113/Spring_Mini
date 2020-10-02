@@ -2,14 +2,11 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
-<title>Insert title here</title>
-
+<title>login</title>
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>MyResume Bootstrap Template - Index</title>
 <meta content="" name="descriptison">
 <meta content="" name="keywords">
 
@@ -36,6 +33,21 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/style.css" rel="stylesheet">
 
+<!--로그인폼 소스 -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- 로그인폼 소스 css파일링크연결 -->
+<link href="resources/member/css/login.css" rel="stylesheet">
+
 <!-- =======================================================
   * Template Name: MyResume - v2.1.0
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -45,107 +57,80 @@
 </head>
 
 <body>
+	<!-- ======= Mobile nav toggle button ======= -->
+	<button type="button" class="mobile-nav-toggle d-xl-none">
+		<i class="icofont-navigation-menu"></i>
+	</button>
 	<header id="header" class="d-flex flex-column justify-content-center">
 
 		<nav class="nav-menu">
 			<ul>
-				<li class="active"><a href="#hero"><i class="bx bx-home"></i>
+				<li class="active"><a href="home.do"><i class="bx bx-home"></i>
 						<span>Home</span></a></li>
-				<li><a href="about.jsp"><i class="bx bx-user"></i> <span>로그인</span></a></li>
-				<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-				<li><a href="#portfolio"><i class="bx bx-book-content"></i>
-						<span>Portfolio</span></a></li>
-				<li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
-				<li><a href="loginform.jsp"><i class="bx bx-envelope"></i>
-						<span>Contact</span></a></li>
+				<li><a href="login.do"><i class="bx bx-user"></i> <span>로그인</span></a></li>
+				<li><a href="#"><i class="icofont-moon"></i><span>공지사항</span></a></li>
+				<li><a href="#"><i class="icofont-eye"></i><span>객실둘러보기</span></a></li>
+				<li><a href="#"><i class="icofont-calendar"></i> <span>예약하기</span></a></li>
+				<li><a href="#"><i class="icofont-pencil-alt-2"></i> <span>후기게시판</span></a></li>
+				<li><a href="#"><i class="icofont-foot-print"></i> <span>오시는길</span></a></li>
 			</ul>
 		</nav>
 		<!-- .nav-menu -->
 
 	</header>
-	
 
-	<section id="contact" class="contact">
-		<h1>싸발..ㅋㅋ</h1>
-		<div class="container" data-aos="fade-up">
-
-			<div class="section-title">
-				<h2>Contact</h2>
+	<div class="login-form">
+		<form action="/examples/actions/confirmation.php" method="post">
+			<div class="avatar">
+				<i class="material-icons">&#xE7FF;</i>
+			</div>
+			<h4 class="modal-title">Login to Your Account</h4>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Username"
+					required="required">
 			</div>
 
-			<div class="row mt-1">
-
-				<div class="col-lg-4">
-					<div class="info">
-						<div class="address">
-							<i class="icofont-google-map"></i>
-							<h4>Location:</h4>
-							<p>A108 Adam Street, New York, NY 535022</p>
-						</div>
-
-						<div class="email">
-							<i class="icofont-envelope"></i>
-							<h4>Email:</h4>
-							<p>info@example.com</p>
-						</div>
-
-						<div class="phone">
-							<i class="icofont-phone"></i>
-							<h4>Call:</h4>
-							<p>+1 5589 55488 55s</p>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-8 mt-5 mt-lg-0">
-
-					<form action="forms/contact.php" method="post" role="form"
-						class="php-email-form">
-						<div class="form-row">
-							<div class="col-md-6 form-group">
-								<input type="text" name="name" class="form-control" id="name"
-									placeholder="Your Name" data-rule="minlen:4"
-									data-msg="Please enter at least 4 chars" />
-								<div class="validate"></div>
-							</div>
-							<div class="col-md-6 form-group">
-								<input type="email" class="form-control" name="email" id="email"
-									placeholder="Your Email" data-rule="email"
-									data-msg="Please enter a valid email" />
-								<div class="validate"></div>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="subject"
-								id="subject" placeholder="Subject" data-rule="minlen:4"
-								data-msg="Please enter at least 8 chars of subject" />
-							<div class="validate"></div>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" name="message" rows="5"
-								data-rule="required" data-msg="Please write something for us"
-								placeholder="Message"></textarea>
-							<div class="validate"></div>
-						</div>
-						<div class="mb-3">
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your message has been sent. Thank
-								you!</div>
-						</div>
-						<div class="text-center">
-							<button type="submit">Send Message</button>
-						</div>
-					</form>
-
-				</div>
-
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="Password"
+					required="required">
 			</div>
-
+			<div class="form-group small clearfix">
+				<label class="checkbox-inline"><input type="checkbox">
+					Remember me</label> <a href="#" class="forgot-link">Forgot Password?</a>
+			</div>
+			<input type="submit" class="btn btn-primary btn-block btn-lg"
+				value="Login">
+		</form>
+		<div class="text-center small">
+			계정이 아직 없으신가요? <a href="#">회원가입</a>
 		</div>
-	</section>
+	</div>
+		<!-- ======= Footer ======= -->
+	<footer id="footer">
+		<div class="container">
+			<h3>Brandon Johnson</h3>
+			<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis
+				magni eligendi fuga maxime saepe commodi placeat.</p>
+			<div class="social-links">
+				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a
+					href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a
+					href="#" class="instagram"><i class="bx bxl-instagram"></i></a> <a
+					href="#" class="google-plus"><i class="bx bxl-skype"></i></a> <a
+					href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+			</div>
+			<div class="copyright">
+				&copy; Copyright <strong><span>MyResume</span></strong>. All Rights
+				Reserved
+			</div>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you purchased the pro version. -->
+				<!-- Licensing information: [license-url] -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+			</div>
+		</div>
+	</footer>
 
 	<a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
 	<div id="preloader"></div>

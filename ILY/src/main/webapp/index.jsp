@@ -57,16 +57,14 @@
 
 		<nav class="nav-menu">
 			<ul>
-				<li class="active"><a href="#hero"><i class="bx bx-home"></i>
+				<li class="active"><a href="home.do"><i class="bx bx-home"></i>
 						<span>Home</span></a></li>
-				<li><a href="about.jsp"><i class="bx bx-user"></i> <span>로그인</span></a></li>
-				<li><a href="#resume"><!-- <i class="bx bx-file-blank"></i>  --><i class="icofont-moon"></i><span>공지사항</span></a></li>
-				<li><a href="#services"><!-- <i class="bx bx-server"></i> --><i class="icofont-eye"></i><span>객실둘러보기</span></a></li>
-				<li><a href="#portfolio"><!-- <i class="bx bx-book-content"></i> --><i class="icofont-calendar"></i>
-						<span>예약하기</span></a></li>
-				<li><a href="#services"><!-- <i class="bx bx-server"></i> --><i class="icofont-pencil-alt-2"></i> <span>후기게시판</span></a></li>
-				<li><a href="loginform.jsp"><!-- <i class="bx bx-envelope"></i> --><i class="icofont-foot-print"></i>
-						<span>오시는길</span></a></li>
+				<li><a href="login.do"><i class="bx bx-user"></i> <span>로그인</span></a></li>
+				<li><a href="#"><i class="icofont-moon"></i><span>공지사항</span></a></li>
+				<li><a href="#"><i class="icofont-eye"></i><span>객실둘러보기</span></a></li>
+				<li><a href="#"><i class="icofont-calendar"></i> <span>예약하기</span></a></li>
+				<li><a href="#"><i class="icofont-pencil-alt-2"></i> <span>후기게시판</span></a></li>
+				<li><a href="#"><i class="icofont-foot-print"></i> <span>오시는길</span></a></li>
 			</ul>
 		</nav>
 		<!-- .nav-menu -->
@@ -79,7 +77,8 @@
 		<div class="container" data-aos="zoom-in" data-aos-delay="100">
 			<h1>별 게스트하우스</h1>
 			<p>
-			you're <span class="typed" data-typed-items="always welcome., beautiful.,just the way you are. "></span>
+				you're <span class="typed"
+					data-typed-items="always welcome., beautiful.,just the way you are. "></span>
 			</p>
 			<div class="social-links">
 				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a
