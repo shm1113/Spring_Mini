@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper>
-  <cache-ref namespace=""/>
+<mapper namespace="member">
+
+<insert id="insert" parameterType="MemberDto">
+	insert into ily_member values(member_no_seq,#{member_name},#{member_id},#{member_pw},#{member_email},#{member_phone},#{member_gender},#{member_role},#{member_check})
+</insert>
 </mapper>

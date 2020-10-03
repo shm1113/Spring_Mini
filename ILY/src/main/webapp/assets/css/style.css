@@ -19,8 +19,9 @@ body {
 	color: #272829;
 }
 
-a {
+a{
 	color: #2AA05C;
+	text-decoration: none;
 }
 
 a:hover {
@@ -90,38 +91,25 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-animation: animate-preloader 1s linear infinite;
 	animation: animate-preloader 1s linear infinite;
 }
-/* css에러주석처리 */
-/* @
--webkit-keyframes animate-preloader { 0% {
-	transform: rotate(0deg);
+/* css에러주석처리 - 해결 */
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-}
-@
-keyframes animate-preloader { 0% {
-	transform: rotate(0deg);
-}
-
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
-}
-}
- */
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -213,6 +201,7 @@ rotate(
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
 	color: #fff;
 	background: #2AA05C;
+	text-decoration: none;
 }
 
 .nav-menu a:hover span, .nav-menu .active>a span, .nav-menu li:hover>a span
@@ -1052,37 +1041,24 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
 	background: #0678e3;
 }
-/* css에러 주석처리 */
-/* @
--webkit-keyframes animate-loading { 0% {
-	transform: rotate(0deg);
+/* css에러 주석처리 - 해결 */
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-}
-@
-keyframes animate-loading { 0% {
-	transform: rotate(0deg);
-}
-
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
-}
-} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
