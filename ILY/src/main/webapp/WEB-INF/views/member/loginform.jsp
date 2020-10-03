@@ -102,7 +102,7 @@
 				value="Login">
 		</form>
 		<div class="text-center small">
-			계정이 아직 없으신가요? <a href="#">회원가입</a>
+			계정이 아직 없으신가요? <a href="join.do">회원가입</a>
 		</div>
 	</div>
 		<!-- ======= Footer ======= -->
