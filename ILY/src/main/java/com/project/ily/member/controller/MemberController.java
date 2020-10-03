@@ -24,4 +24,10 @@ public class MemberController {
 		log.info("[login.do]");
 		return "member/loginform";
 	}
+	
+	@RequestMapping("/join.do")
+	public String joinForm() {
+		log.info("[join.do]");
+		return "member/joinform";
+	}
 }
