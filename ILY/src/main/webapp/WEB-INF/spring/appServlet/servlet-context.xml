@@ -23,6 +23,9 @@
 	
 	<context:component-scan base-package="com.project.ily" />
 	
+	<!--NaverLoginBO class에 대한 설정추가  -->
+	<beans:bean id="naverLoginBO" class="com.project.ily.NaverLoginBO"></beans:bean>
+	
 	
 	
 </beans:beans>

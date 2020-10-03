@@ -50,10 +50,15 @@
 			</div>
 			<input type="submit" class="btn btn-primary btn-block btn-lg"
 				value="로그인">
+				<!-- 네이버로그인테스트  -->
+				<h5><a href="naverlogin.do">네이버로그인</a></h5>
+			
 		</form>
 		<div class="text-center small">
 			계정이 아직 없으신가요? <a href="join.do">회원가입</a>
 		</div>
+		<
+		
 	</div>
 
 
